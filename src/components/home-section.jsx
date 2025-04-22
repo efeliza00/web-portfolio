@@ -14,7 +14,7 @@ const HomeSection = ({ info }) => {
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView className="mt-4">
                 <span className="text-pretty text-xl tracking-tighter sm:text-xl xl:text-2xl/none">
-                    Nice to meet you.
+                    Nice to meet you.&#x1F680;
                 </span>
             </BlurFade>
             <BlurFade delay={0.25 * 3} inView className="mt-4">
