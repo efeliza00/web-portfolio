@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import './App.css'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { ThemeProvider } from "next-themes"
+import useSWR from "swr"
+import AboutSection from "./components/about-section"
+import ContactSection from "./components/contact-section"
+import HomeSection from "./components/home-section"
+import Loading from "./components/loading"
+import { BlurFade } from "./components/magicui/blur-fade"
+import { GridPattern } from "./components/magicui/grid-pattern"
+import ProjectSection from "./components/project-section"
+import SkillSection from "./components/skill-section"
+import navigations from "./constants/navigations"
+import { cn } from "./lib/utils"
+import NavigationDock from "./ui/navigation-dock"
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 function App() {
-  const [count, setCount] = useState(0)
+    const { data, isLoading } = useSWR("/data.json", fetcher)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)} className='text-red-500'>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <ThemeProvider enableSystem={false}>
+            <GridPattern
+                width={30}
+                height={30}
+                x={-1}
+                y={-1}
+                strokeDasharray={"4 2"}
+                className={cn(
+                    "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
+                )}
+            />
+            {!isLoading ? (
+                <BlurFade>
+                    <div className="font-poppins bg-background antialiased">
+                        <NavigationDock navigations={navigations} />
+                        <HomeSection info={data?.info} />
+                        <AboutSection about={data?.info?.about} />
+                        <SkillSection skills={data.skills} />
+                        <ProjectSection />
+                        <ContactSection />
+                    </div>
+                </BlurFade>
+            ) : (
+                <Loading />
+            )}
+        </ThemeProvider>
+    )
 }
 
 export default App
