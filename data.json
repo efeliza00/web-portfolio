@@ -1,5 +1,6 @@
 {
     "info": {
+        "logo": "/logo.png",
         "name": "Evan Feliza",
         "title": "Frontend Developer",
         "about": "As a computer engineering graduate transitioning into web development, I bring strong problem-solving skills to frontend programming. I'm currently building my expertise in modern JavaScript, React, and responsive design while applying my technical foundation to create efficient, user-friendly interfaces. Every project helps me bridge the gap between software principles and practical web development."
@@ -12,7 +13,8 @@
         "Docker",
         "Nginx",
         "Prisma",
-        "MySql"
+        "MySql",
+        "Git"
     ],
     "projects": [
         {
