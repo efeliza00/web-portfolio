@@ -9,7 +9,7 @@ const HomeSection = ({ info }) => {
             <BlurFade delay={0.25} inView>
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Hi, I'm <AuroraText>{info.name}</AuroraText> a passionate{" "}
-                    <AuroraText>{info.title}</AuroraText> developer.
+                    <AuroraText>{info.title}</AuroraText>.
                 </h2>
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView className="mt-4">
