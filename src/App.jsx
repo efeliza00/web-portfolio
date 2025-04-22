@@ -19,7 +19,11 @@ function App() {
 
     return (
         <ThemeProvider enableSystem={false}>
-            <link rel="icon" type="image/svg+xml" href={data?.info.logo} />
+            <link
+                rel="icon"
+                type="image/svg+xml"
+                href={`${data?.info?.logo}`}
+            />
             <title>{data?.info.name}</title>
             <meta name="description" content={data?.info.about} />
             {!isLoading ? (
