@@ -1,53 +1,106 @@
+import { CodeIcon, Link1Icon, LinkNone2Icon } from "@radix-ui/react-icons"
+import { PhotoProvider, PhotoView } from "react-photo-view"
+import "react-photo-view/dist/react-photo-view.css"
+import { Link } from "react-router"
 import { Element } from "react-scroll"
 import { AuroraText } from "./magicui/aurora-text"
-import { BentoCard, BentoGrid } from "./magicui/bento-grid"
 import { BlurFade } from "./magicui/blur-fade"
+import { TextAnimate } from "./magicui/text-animate"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
+import { Separator } from "./ui/separator"
 
-const ProjectSection = () => {
-    const features = [
-        {
-            name: "Save your files",
-            description: "We automatically save your files as you type.",
-            href: "/",
-            cta: "Learn more",
-            background: (
-                <img className="absolute -right-20 -top-20 opacity-60" />
-            ),
-        },
-        {
-            name: "Full text search",
-            description: "Search through all your files in one place.",
-            href: "/",
-            cta: "Learn more",
-            background: (
-                <img className="absolute -right-20 -top-20 opacity-60" />
-            ),
-        },
-        {
-            name: "Multilingual",
-            description: "Supports 100+ languages and counting.",
-            href: "/",
-            cta: "Learn more",
-            background: (
-                <img className="absolute -right-20 -top-20 opacity-60" />
-            ),
-        },
-    ]
+const ProjectCard = ({ project }) => {
     return (
-        <Element name="projects" className="bg-primary-foreground">
-            <div className="container mx-auto max-w-3xl py-28 ">
-                <BlurFade delay={0.25} inView>
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                        <AuroraText>My Projects</AuroraText>
-                    </h2>
-                </BlurFade>
-                <BentoGrid className="lg:grid-rows-3 mt-5">
-                    {features.map((feature) => (
-                        <BentoCard key={feature.name} {...feature} />
+        <div className="border rounded-lg col-span-1 overflow-hidden group shadow hover:cursor-pointer ">
+            {project.images.map((image, index) => (
+                <PhotoView height={800} width={800} key={index} src={image}>
+                    {index < 1 ? (
+                        <img
+                            src={image}
+                            alt={`${image}-${index}`}
+                            className="transition-transform duration-300 transform group-hover:scale-110"
+                        />
+                    ) : undefined}
+                </PhotoView>
+            ))}
+            <div className="p-4 space-y-3">
+                <h3 className="tracking-tight text-lg ">{project.title}</h3>
+                <div className="flex gap-1 items-center">
+                    {project.url ? (
+                        <Link
+                            to={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button variant="outline" size="icon">
+                                <Link1Icon />
+                            </Button>
+                        </Link>
+                    ) : (
+                        <Button variant="outline" size="icon" disabled>
+                            <LinkNone2Icon />
+                        </Button>
+                    )}
+
+                    {project.code ? (
+                        <Link
+                            to={project.code}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button variant="outline" size="icon">
+                                <CodeIcon />
+                            </Button>
+                        </Link>
+                    ) : (
+                        <Button variant="outline" size="icon" disabled>
+                            <CodeIcon />
+                        </Button>
+                    )}
+                </div>
+                <Separator />
+                <div className="space-x-1">
+                    {project.technologies.map((technology) => (
+                        <Badge>{technology}</Badge>
                     ))}
-                </BentoGrid>
+                </div>
+                <p className="tracking-tight text-sm">{project.description}</p>
             </div>
-        </Element>
+        </div>
+    )
+}
+
+const ProjectSection = ({ projects }) => {
+    return (
+        <PhotoProvider pullClosable={false} maskClosable={false}>
+            <Element name="projects" className="bg-primary-foreground">
+                <div className="container mx-auto max-w-3xl py-28 space-y-5">
+                    <BlurFade delay={0.25} inView>
+                        <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
+                            <AuroraText>My Projects</AuroraText>
+                        </h2>
+                    </BlurFade>
+                    <TextAnimate animation="blurIn" as="h4">
+                        Here are the list of my solid projects. Check it out!
+                    </TextAnimate>
+                    <div className="grid grid-cols-3 gap-3">
+                        {projects?.map((project, index) => {
+                            return (
+                                <BlurFade
+                                    key={project}
+                                    delay={0.25 + index * 0.2}
+                                    duration={0.5}
+                                    inView
+                                >
+                                    <ProjectCard project={project} />
+                                </BlurFade>
+                            )
+                        })}
+                    </div>
+                </div>
+            </Element>
+        </PhotoProvider>
     )
 }
 

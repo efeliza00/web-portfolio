@@ -18,20 +18,24 @@
     ],
     "projects": [
         {
-            "title": "E-commerce Dashboard",
-            "description": "A responsive admin dashboard for e-commerce analytics built with React and Chart.js.",
-            "technologies": ["React", "Redux", "Chart.js", "Material UI"],
-            "image": "images/project1.jpg",
-            "liveUrl": "https://example.com/demo",
-            "codeUrl": "https://github.com/username/project1"
-        },
-        {
-            "title": "Travel Blog Platform",
-            "description": "Full-stack travel blog with user authentication and rich text editing.",
-            "technologies": ["Vue.js", "Node.js", "MongoDB", "Quill.js"],
-            "image": "images/project2.jpg",
-            "liveUrl": "https://example.com/travel-blog",
-            "codeUrl": "https://github.com/username/project2"
+            "title": "Barangay Inhabitant Viewer",
+            "description": "A web application that works offline, providing tools to view and analyze inhabitant records, family details, and household information through interactive dashboards.",
+            "technologies": [
+                "React",
+                "NextJS",
+                "ShadcnUI",
+                "Docker",
+                "Nginx",
+                "Tailwindcss"
+            ],
+            "images": [
+                "src/assets/images/image1.png",
+                "src/assets/images/image2.png",
+                "src/assets/images/image3.png",
+                "src/assets/images/image4.png"
+            ],
+            "url": "",
+            "code": ""
         }
     ],
     "contact": {

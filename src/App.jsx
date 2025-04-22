@@ -42,8 +42,8 @@ function App() {
                         <NavigationDock navigations={navigations} />
                         <HomeSection info={data?.info} />
                         <AboutSection about={data?.info?.about} />
-                        <SkillSection skills={data.skills} />
-                        <ProjectSection />
+                        <SkillSection skills={data?.skills} />
+                        <ProjectSection projects={data?.projects} />
                         <ContactSection />
                     </div>
                 </BlurFade>
