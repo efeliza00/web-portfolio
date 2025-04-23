@@ -2,6 +2,7 @@ import { ThemeProvider } from "next-themes"
 import useSWR from "swr"
 import AboutSection from "./components/about-section"
 import ContactSection from "./components/contact-section"
+import Footer from "./components/footer"
 import HomeSection from "./components/home-section"
 import Loading from "./components/loading"
 import { BlurFade } from "./components/magicui/blur-fade"
@@ -28,7 +29,7 @@ function App() {
             <meta name="description" content={data?.info.about} />
             {!isLoading ? (
                 <BlurFade>
-                    <div className="font-poppins bg-background antialiased">
+                    <div className="font-poppins bg-background antialiased relative">
                         <GridPattern
                             width={30}
                             height={30}
@@ -36,7 +37,7 @@ function App() {
                             y={-1}
                             strokeDasharray={"4 2"}
                             className={cn(
-                                "[mask-image:radial-gradient(700px_circle_at_center,white,transparent)]"
+                                "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
                             )}
                         />
                         <NavigationDock navigations={navigations} />
@@ -45,6 +46,7 @@ function App() {
                         <SkillSection skills={data?.skills} />
                         <ProjectSection projects={data?.projects} />
                         <ContactSection contact={data?.contact} />
+                        <Footer info={data?.info} />
                     </div>
                 </BlurFade>
             ) : (

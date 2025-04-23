@@ -88,12 +88,15 @@ const ProjectSection = ({ projects }) => {
                         {projects?.map((project, index) => {
                             return (
                                 <BlurFade
-                                    key={project}
+                                    key={index}
                                     delay={0.25 + index * 0.2}
                                     duration={0.5}
                                     inView
                                 >
-                                    <ProjectCard project={project} />
+                                    <ProjectCard
+                                        project={project}
+                                        key={index}
+                                    />
                                 </BlurFade>
                             )
                         })}
