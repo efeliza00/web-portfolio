@@ -31,13 +31,13 @@ function App() {
                 <BlurFade>
                     <div className="font-poppins bg-background antialiased relative">
                         <GridPattern
-                            width={30}
-                            height={30}
+                            width={35}
+                            height={35}
                             x={-1}
                             y={-1}
                             strokeDasharray={"4 2"}
                             className={cn(
-                                "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
+                                "[mask-image:radial-gradient(750px_circle_at_top,white,transparent)]"
                             )}
                         />
                         <NavigationDock navigations={navigations} />

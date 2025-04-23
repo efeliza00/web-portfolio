@@ -1,3 +1,4 @@
+import { GrDocumentText } from "react-icons/gr"
 import { Element } from "react-scroll"
 import { AuroraText } from "./magicui/aurora-text"
 import { BlurFade } from "./magicui/blur-fade"
@@ -18,7 +19,12 @@ const HomeSection = ({ info }) => {
                 </span>
             </BlurFade>
             <BlurFade delay={0.25 * 3} inView className="mt-4">
-                <InteractiveHoverButton>My Resume</InteractiveHoverButton>
+                <InteractiveHoverButton>
+                    <div className="flex items-center gap-2">
+                        <GrDocumentText />
+                        <span>My Resume</span>
+                    </div>
+                </InteractiveHoverButton>
             </BlurFade>
         </Element>
     )

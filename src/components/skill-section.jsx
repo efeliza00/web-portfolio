@@ -38,10 +38,13 @@ const SkillSection = ({ skills, githubAccount }) => {
                 </div>
 
                 <div className="mt-20 space-y-4">
-                    <h3 className="scroll-m-20 text-xl font-semibold tracking-tight text-center">
-                        Checkout my{" "}
-                        <FaGithub className="inline-block text-4xl" />{" "}
-                        <span className="text-4xl">github</span> contributions
+                    <h3 className="scroll-m-20 text-xl/none font-semibold tracking-tight text-center">
+                        Take a look at my{" "}
+                        <span className="inline-flex items-center gap-1">
+                            <FaGithub className="text-4xl" />{" "}
+                            <span className="text-4xl">GitHub</span>
+                        </span>{" "}
+                        contributions.
                     </h3>
                     <GitHubCalendar username={username} />
                 </div>
