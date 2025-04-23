@@ -14,7 +14,7 @@ import { Separator } from "./ui/separator"
 const ProjectCard = ({ project }) => {
     return (
         <PhotoProvider pullClosable={false} maskClosable={false}>
-            <div className="border rounded-lg col-span-1 h-[25rem] overflow-hidden group shadow hover:cursor-pointer hover:ring ring-offset-4 ">
+            <div className="border rounded-lg col-span-1 h-[25rem] overflow-hidden group shadow hover:cursor-pointer hover:ring hover:ring-offset-4 bg-card">
                 {project.images.map((image, index) => (
                     <PhotoView height={800} width={800} key={index} src={image}>
                         {index < 1 ? (
