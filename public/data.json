@@ -36,6 +36,25 @@
             ],
             "url": "",
             "code": ""
+        },
+        {
+            "title": "Mobo Market",
+            "description": "Mobo Market is an e-commerce demo web application that aims to showcase the usage of APIs specifically Fake Store API. With the use of NextJS 14, this app demonstrates the usage of new features of Next JS such intercepted routes, parallel routes. This app also uses middlewares for authentication. With the help of shadcn UI the app showcases beautiful components.",
+            "technologies": [
+                "React",
+                "NextJS",
+                "ShadcnUI",
+                "FakeStoreApi",
+                "Tailwindcss"
+            ],
+            "images": [
+                "/images/projects/project2image1.png",
+                "/images/projects/project2image2.png",
+                "/images/projects/project2image3.png",
+                "/images/projects/project2image4.png"
+            ],
+            "url": "https://mobomarket.vercel.app",
+            "code": "https://github.com/efeliza00/e-commerce"
         }
     ],
     "contact": {
