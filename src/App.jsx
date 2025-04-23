@@ -44,7 +44,7 @@ function App() {
                         <AboutSection about={data?.info?.about} />
                         <SkillSection skills={data?.skills} />
                         <ProjectSection projects={data?.projects} />
-                        <ContactSection />
+                        <ContactSection contact={data?.contact} />
                     </div>
                 </BlurFade>
             ) : (

@@ -40,23 +40,7 @@
     ],
     "contact": {
         "email": "evanfeliza22@gmail.com",
-        "phone": "09485081093",
-        "social": [
-            {
-                "name": "GitHub",
-                "url": "https://github.com/username",
-                "icon": "icons/github.svg"
-            },
-            {
-                "name": "LinkedIn",
-                "url": "https://linkedin.com/in/username",
-                "icon": "icons/linkedin.svg"
-            },
-            {
-                "name": "Twitter",
-                "url": "https://twitter.com/username",
-                "icon": "icons/twitter.svg"
-            }
-        ]
+        "github": "https://github.com/efeliza00",
+        "linkedIn": "https://www.linkedin.com/in/evan-feliza-507184245"
     }
 }

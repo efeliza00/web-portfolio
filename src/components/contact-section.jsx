@@ -1,11 +1,18 @@
+import {
+    EnvelopeClosedIcon,
+    GitHubLogoIcon,
+    LinkedInLogoIcon,
+} from "@radix-ui/react-icons"
+import { Link } from "react-router"
 import { Element } from "react-scroll"
 import { AuroraText } from "./magicui/aurora-text"
 import { BlurFade } from "./magicui/blur-fade"
+import { Dock, DockIcon } from "./magicui/dock"
 
-const ContactSection = () => {
+const ContactSection = ({ contact }) => {
     return (
         <Element name="contact">
-            <div className="container mx-auto max-w-3xl py-28 ">
+            <div className="container relative mx-auto max-w-3xl py-28 ">
                 <BlurFade delay={0.25} inView>
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none text-center">
                         <AuroraText>Lets have a conversation.</AuroraText>
@@ -15,6 +22,36 @@ const ContactSection = () => {
                     Questions? Ideas? Want to collaborate? I’d love to hear from
                     you.
                 </p>
+                <Dock direction="middle">
+                    <Link
+                        to={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Conversation"
+                    >
+                        <DockIcon className="hover:bg-secondary">
+                            <EnvelopeClosedIcon />
+                        </DockIcon>
+                    </Link>
+                    <Link
+                        to={contact.linkedIn}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <DockIcon className="hover:bg-secondary">
+                            <LinkedInLogoIcon />
+                        </DockIcon>
+                    </Link>
+                    <Link
+                        to={contact.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <DockIcon className="hover:bg-secondary">
+                            <GitHubLogoIcon />
+                        </DockIcon>
+                    </Link>
+                </Dock>
             </div>
         </Element>
     )
