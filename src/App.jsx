@@ -37,13 +37,16 @@ function App() {
                             y={-1}
                             strokeDasharray={"4 2"}
                             className={cn(
-                                "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
+                                "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
                             )}
                         />
                         <NavigationDock navigations={navigations} />
                         <HomeSection info={data?.info} />
                         <AboutSection about={data?.info?.about} />
-                        <SkillSection skills={data?.skills} />
+                        <SkillSection
+                            skills={data?.skills}
+                            githubAccount={data?.contact.github}
+                        />
                         <ProjectSection projects={data?.projects} />
                         <ContactSection contact={data?.contact} />
                         <Footer info={data?.info} />
