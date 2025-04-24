@@ -29,7 +29,9 @@ const ProjectCard = ({ project }) => {
                     </PhotoView>
                 ))}
                 <div className="p-4 space-y-3">
-                    <h3 className="tracking-tight text-lg">{project.title}</h3>
+                    <h3 className="tracking-tight text-lg font-semibold h-[3rem] line-clamp-3">
+                        {project.title}
+                    </h3>
                     <div className="flex gap-1 items-center">
                         {project.url ? (
                             <Link
@@ -64,12 +66,12 @@ const ProjectCard = ({ project }) => {
                         )}
                     </div>
                     <Separator />
-                    <div className="space-x-1">
+                    <div className="space-x-1 line-clamp-3">
                         {project.technologies.map((technology) => (
                             <Badge>{technology}</Badge>
                         ))}
                     </div>
-                    <ScrollArea className="h-14">
+                    <ScrollArea className="h-20">
                         <p className="tracking-tight text-sm">
                             {project.description}
                         </p>
