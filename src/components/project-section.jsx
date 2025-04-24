@@ -1,4 +1,6 @@
 import { CodeIcon, Link1Icon, LinkNone2Icon } from "@radix-ui/react-icons"
+import GitHubCalendar from "react-github-calendar"
+import { FaGithub } from "react-icons/fa"
 import { PhotoProvider, PhotoView } from "react-photo-view"
 import "react-photo-view/dist/react-photo-view.css"
 import { Link } from "react-router"
@@ -78,7 +80,9 @@ const ProjectCard = ({ project }) => {
     )
 }
 
-const ProjectSection = ({ projects }) => {
+const ProjectSection = ({ projects, githubAccount }) => {
+    const match = githubAccount.match(/github\.com\/([^/]+)/)
+    const username = match ? match[1] : null
     return (
         <Element name="projects" className="bg-primary-foreground">
             <div className="container mx-auto max-w-3xl py-28 space-y-5">
@@ -103,6 +107,17 @@ const ProjectSection = ({ projects }) => {
                             </BlurFade>
                         )
                     })}
+                </div>
+                <div className="mt-20 space-y-4">
+                    <h3 className="scroll-m-20 text-xl/none font-semibold tracking-tight text-center">
+                        Take a look at my{" "}
+                        <span className="inline-flex items-center gap-1">
+                            <FaGithub className="text-4xl" />{" "}
+                            <span className="text-4xl">GitHub</span>
+                        </span>{" "}
+                        contributions.
+                    </h3>
+                    <GitHubCalendar username={username} />
                 </div>
             </div>
         </Element>
