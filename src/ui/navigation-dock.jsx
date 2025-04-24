@@ -19,9 +19,9 @@ const NavigationDock = ({ navigations }) => {
                     onSetActive={(to) => {
                         setActiveSection(to)
                     }}
-                    className={`relative px-8 rounded-lg transition-all duration-300 ease-out cursor-pointer ${
+                    className={`relative px-8 hover:bg-secondary rounded-lg transition-all duration-300 ease-out cursor-pointer ${
                         activeSection === navigation.value
-                            ? "bg-accent shadow-xs font-medium scale-105"
+                            ? "bg-accent-foreground text-white shadow-xs font-medium scale-105"
                             : "opacity-80 hover:opacity-100 hover:bg-accent/20"
                     }`}
                 >
