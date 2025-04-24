@@ -17,17 +17,26 @@ const ProjectCard = ({ project }) => {
     return (
         <PhotoProvider pullClosable={false} maskClosable={false}>
             <div className="border rounded-lg col-span-1 h-[25rem] overflow-hidden group shadow hover:cursor-pointer hover:ring hover:ring-offset-4 bg-card">
-                {project.images.map((image, index) => (
-                    <PhotoView height={800} width={800} key={index} src={image}>
-                        {index < 1 ? (
-                            <img
-                                src={image}
-                                alt={`${image}-${index}`}
-                                className="transition-transform duration-300 transform group-hover:scale-110"
-                            />
-                        ) : undefined}
-                    </PhotoView>
-                ))}
+                {/* Image Container (Fixed Height) */}
+                <div className="h-[6.5rem] w-full overflow-hidden relative">
+                    {project.images.map((image, index) => (
+                        <PhotoView
+                            height={1000}
+                            width={800}
+                            key={index}
+                            src={image}
+                        >
+                            {index < 1 ? (
+                                <img
+                                    src={image}
+                                    alt={`${image}-${index}`}
+                                    className="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-110"
+                                />
+                            ) : undefined}
+                        </PhotoView>
+                    ))}
+                </div>
+                {/* Rest of the card content */}
                 <div className="p-4 space-y-3">
                     <h3 className="tracking-tight text-lg font-semibold h-[3rem] line-clamp-3">
                         {project.title}
@@ -48,7 +57,6 @@ const ProjectCard = ({ project }) => {
                                 <LinkNone2Icon />
                             </Button>
                         )}
-
                         {project.code ? (
                             <Link
                                 to={project.code}
@@ -66,16 +74,16 @@ const ProjectCard = ({ project }) => {
                         )}
                     </div>
                     <Separator />
-                    <div className="space-x-1 line-clamp-3">
-                        {project.technologies.map((technology) => (
-                            <Badge>{technology}</Badge>
-                        ))}
-                    </div>
                     <ScrollArea className="h-20">
                         <p className="tracking-tight text-sm">
                             {project.description}
                         </p>
                     </ScrollArea>
+                    <div className="space-x-1 line-clamp-3">
+                        {project.technologies.map((technology) => (
+                            <Badge key={technology}>{technology}</Badge>
+                        ))}
+                    </div>
                 </div>
             </div>
         </PhotoProvider>
