@@ -43,11 +43,11 @@ function App() {
                         <NavigationDock navigations={navigations} />
                         <HomeSection info={data?.info} />
                         <AboutSection about={data?.info?.about} />
-                        <SkillSection
-                            skills={data?.skills}
+                        <SkillSection skills={data?.skills} />
+                        <ProjectSection
+                            projects={data?.projects}
                             githubAccount={data?.contact.github}
                         />
-                        <ProjectSection projects={data?.projects} />
                         <ContactSection contact={data?.contact} />
                         <Footer info={data?.info} />
                     </div>

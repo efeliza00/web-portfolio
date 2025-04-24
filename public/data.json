@@ -3,6 +3,7 @@
         "logo": "./logo.png",
         "name": "Evan Feliza",
         "title": "Frontend Developer",
+        "resume": "./files/resume.pdf",
         "about": "As a computer engineering graduate transitioning into web development, I bring strong problem-solving skills to frontend programming. I'm currently building my expertise in modern JavaScript, React, and responsive design while applying my technical foundation to create efficient, user-friendly interfaces. Every project helps me bridge the gap between software principles and practical web development."
     },
     "skills": [
@@ -55,6 +56,18 @@
             ],
             "url": "https://mobomarket.vercel.app",
             "code": "https://github.com/efeliza00/e-commerce"
+        },
+        {
+            "title": "Crypto Checker",
+            "description": "CryptoChecker is a web application that is powerded by CoingeckoAPI. This enable users to browse crypto currency coins with the latest prices, rankings and coin information.",
+            "technologies": ["React", "NextJS", "CoinGeckoApi", "Tailwindcss"],
+            "images": [
+                "/images/projects/project3image1.png",
+                "/images/projects/project3image2.png",
+                "/images/projects/project3image3.png"
+            ],
+            "url": "https://crypto-checkerph.vercel.app/",
+            "code": "https://github.com/efeliza00/crypto-checker"
         }
     ],
     "contact": {

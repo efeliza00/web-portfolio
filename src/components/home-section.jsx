@@ -19,12 +19,14 @@ const HomeSection = ({ info }) => {
                 </span>
             </BlurFade>
             <BlurFade delay={0.25 * 3} inView className="mt-4">
-                <InteractiveHoverButton>
-                    <div className="flex items-center gap-2">
-                        <GrDocumentText />
-                        <span>My Resume</span>
-                    </div>
-                </InteractiveHoverButton>
+                <a download href={info.resume}>
+                    <InteractiveHoverButton>
+                        <div className="flex items-center gap-2">
+                            <GrDocumentText />
+                            <span>My Resume</span>
+                        </div>
+                    </InteractiveHoverButton>
+                </a>
             </BlurFade>
         </Element>
     )
