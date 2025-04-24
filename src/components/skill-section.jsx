@@ -17,7 +17,7 @@ const SkillSection = ({ skills }) => {
                     Technologies I've used so far..
                 </TextAnimate>
 
-                <div className="flex flex-wrap gap-2 mt-8">
+                <div className="flex flex-wrap gap-2 min-h-20 mt-8">
                     {skills.map((skill, index) => (
                         <BlurFade
                             key={skill}
