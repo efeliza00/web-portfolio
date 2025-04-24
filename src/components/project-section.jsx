@@ -36,7 +36,6 @@ const ProjectCard = ({ project }) => {
                         </PhotoView>
                     ))}
                 </div>
-                {/* Rest of the card content */}
                 <div className="p-4 space-y-3">
                     <h3 className="tracking-tight text-lg font-semibold h-[3rem] line-clamp-3">
                         {project.title}
@@ -125,7 +124,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                             <FaGithub className="text-4xl" />{" "}
                             <span className="text-4xl">GitHub</span>
                         </span>{" "}
-                        contributions.
+                        activity.
                     </h3>
                     <GitHubCalendar username={username} />
                 </div>

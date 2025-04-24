@@ -6,7 +6,10 @@ import { InteractiveHoverButton } from "./magicui/interactive-hover-button"
 
 const HomeSection = ({ info }) => {
     return (
-        <Element name="home" className="container mx-auto max-w-3xl py-28">
+        <Element
+            name="home"
+            className="bg-inherit container mx-auto max-w-3xl py-28"
+        >
             <BlurFade delay={0.25} inView>
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Hi, I'm <AuroraText>{info.name}</AuroraText> a passionate{" "}

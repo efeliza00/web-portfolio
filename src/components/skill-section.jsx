@@ -14,14 +14,14 @@ const SkillSection = ({ skills }) => {
                     </h2>
                 </BlurFade>
                 <TextAnimate animation="blurIn" as="h4">
-                    Technologies I've used so far..
+                    Technologies I’ve had hands-on experience with.
                 </TextAnimate>
 
                 <div className="flex flex-wrap gap-2 min-h-20 mt-8">
                     {skills.map((skill, index) => (
                         <BlurFade
                             key={skill}
-                            delay={0.25 + index * 0.05}
+                            delay={0.25 + index * 0.1}
                             duration={0.5}
                             inView
                         >

@@ -27,19 +27,19 @@ function App() {
             />
             <title>{data?.info.name}</title>
             <meta name="description" content={data?.info.about} />
+            <GridPattern
+                width={35}
+                height={35}
+                x={-1}
+                y={-1}
+                strokeDasharray={"4 2"}
+                className={cn(
+                    "[mask-image:radial-gradient(750px_circle_at_top,white,transparent)]"
+                )}
+            />
             {!isLoading ? (
                 <BlurFade>
-                    <div className="font-poppins bg-background antialiased relative">
-                        <GridPattern
-                            width={35}
-                            height={35}
-                            x={-1}
-                            y={-1}
-                            strokeDasharray={"4 2"}
-                            className={cn(
-                                "[mask-image:radial-gradient(750px_circle_at_top,white,transparent)]"
-                            )}
-                        />
+                    <div className="font-poppins antialiased relative">
                         <NavigationDock navigations={navigations} />
                         <HomeSection info={data?.info} />
                         <AboutSection about={data?.info?.about} />
