@@ -8,20 +8,22 @@ const HomeSection = ({ info }) => {
     return (
         <Element
             name="home"
-            className="bg-inherit container mx-auto max-w-3xl py-28"
+            className="bg-inherit mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32"
         >
             <BlurFade delay={0.25} inView>
-                <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <AuroraText>{info.name}</AuroraText> a passionate{" "}
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                    Hi, I'm <AuroraText>{info.name}</AuroraText>, a passionate{" "}
                     <AuroraText>{info.title}</AuroraText>.
                 </h2>
             </BlurFade>
-            <BlurFade delay={0.25 * 2} inView className="mt-4">
-                <span className="text-pretty text-xl tracking-tighter sm:text-xl xl:text-2xl/none">
-                    Nice to meet you.&#x1F680;
-                </span>
+
+            <BlurFade delay={0.5} inView className="mt-4">
+                <p className="text-lg sm:text-xl xl:text-2xl text-pretty tracking-tight">
+                    Nice to meet you. 🚀
+                </p>
             </BlurFade>
-            <BlurFade delay={0.25 * 3} inView className="mt-4">
+
+            <BlurFade delay={0.75} inView className="mt-6">
                 <a download href={info.resume}>
                     <InteractiveHoverButton>
                         <div className="flex items-center gap-2">

@@ -12,7 +12,7 @@ import { Dock, DockIcon } from "./magicui/dock"
 const ContactSection = ({ contact }) => {
     return (
         <Element name="contact">
-            <div className="container relative mx-auto max-w-3xl py-28 ">
+            <div className="container relative mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
                 <BlurFade delay={0.25} inView>
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none text-center">
                         <AuroraText>Lets have a conversation.</AuroraText>
