@@ -23,9 +23,13 @@ const HomeSection = ({ info }) => {
                 </p>
             </BlurFade>
 
-            <BlurFade delay={0.75} inView className="mt-6">
+            <BlurFade
+                delay={0.75}
+                inView
+                className="mt-6 flex justify-center md:justify-start"
+            >
                 <a download href={info.resume}>
-                    <InteractiveHoverButton>
+                    <InteractiveHoverButton className="mx-auto md:mx-0">
                         <div className="flex items-center gap-2">
                             <GrDocumentText />
                             <span>My Resume</span>

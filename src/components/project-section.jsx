@@ -114,7 +114,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
     const username = match ? match[1] : null
     return (
         <Element name="projects" className="bg-primary-foreground">
-            <div className="container mx-auto max-w-3xl py-28 space-y-5">
+            <div className="container mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 space-y-5">
                 <BlurFade delay={0.25} inView>
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
                         <AuroraText>My Projects</AuroraText>
@@ -123,7 +123,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                 <TextAnimate animation="blurIn" as="h4">
                     Here are the list of my solid projects. Check it out!
                 </TextAnimate>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {projects?.map((project, index) => {
                         return (
                             <BlurFade
@@ -146,15 +146,18 @@ const ProjectSection = ({ projects, githubAccount }) => {
                         </BlurFade>
                     )}
                 </div>
-                <div className="mt-20 space-y-4">
-                    <h3 className="scroll-m-20 text-xl/none font-semibold px-4 sm:px-6 py-16 sm:py-24 lg:py-32 tracking-tight text-center">
+                <div className="space-y-4 mt-10">
+                    <h3 className="scroll-m-20 text-sm sm:text-base md:text-lg font-semibold tracking-tight text-center whitespace-nowrap">
                         Take a look at my{" "}
                         <span className="inline-flex items-center gap-1">
-                            <FaGithub className="text-4xl" />{" "}
-                            <span className="text-4xl">GitHub</span>
+                            <FaGithub className="text-xl sm:text-2xl lg:text-4xl" />
+                            <span className="text-xl sm:text-2xl lg:text-4xl">
+                                GitHub
+                            </span>
                         </span>{" "}
                         activity.
                     </h3>
+
                     <GitHubCalendar username={username} />
                 </div>
             </div>

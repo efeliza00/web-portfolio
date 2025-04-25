@@ -38,7 +38,7 @@ function App() {
                 )}
             />
             {!isLoading ? (
-                <BlurFade>
+                <BlurFade delay={0.25} inView>
                     <div className="font-poppins antialiased relative">
                         <NavigationDock navigations={navigations} />
                         <HomeSection info={data?.info} />

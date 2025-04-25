@@ -3,7 +3,7 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress"
 import { Link } from "react-scroll"
 const NavigationDock = ({ navigations }) => {
     return (
-        <Dock className="justify-between gap-2 sticky top-3 z-50 overflow-hidden border-none">
+        <Dock className="invisible md:visible justify-between gap-2 sticky top-3 z-50 overflow-hidden border-none">
             {navigations?.map((navigation) => (
                 <Link
                     key={navigation.value}

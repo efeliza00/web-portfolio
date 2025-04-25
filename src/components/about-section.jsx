@@ -13,7 +13,11 @@ const AboutSection = ({ about }) => {
                     </h2>
                 </BlurFade>
 
-                <TextAnimate animation="blurIn" as="h3" className="text-center">
+                <TextAnimate
+                    animation="blurIn"
+                    as="h3"
+                    className="text-sm sm:text-base md:text-lg text-center px-4 max-w-full mx-auto leading-relaxed"
+                >
                     {about}
                 </TextAnimate>
             </div>
