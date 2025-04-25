@@ -1,6 +1,7 @@
 import { CodeIcon, Link1Icon, LinkNone2Icon } from "@radix-ui/react-icons"
 import GitHubCalendar from "react-github-calendar"
 import { FaGithub } from "react-icons/fa"
+import { IoIosCog } from "react-icons/io"
 import { PhotoProvider, PhotoView } from "react-photo-view"
 import "react-photo-view/dist/react-photo-view.css"
 import { Link } from "react-router"
@@ -11,14 +12,15 @@ import { TextAnimate } from "./magicui/text-animate"
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 import { ScrollArea } from "./ui/scroll-area"
-import { Separator } from "./ui/separator"
 
 const ProjectCard = ({ project }) => {
     return (
         <PhotoProvider pullClosable={false} maskClosable={false}>
-            <div className="border rounded-lg col-span-1 h-[25rem] overflow-hidden group shadow hover:cursor-pointer hover:ring hover:ring-offset-4 bg-card">
-                {/* Image Container (Fixed Height) */}
-                <div className="h-[6.5rem] w-full overflow-hidden relative">
+            <div
+                tabIndex={0}
+                className="border rounded-lg col-span-1 h-[25rem] min-h-[25rem] relative overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
+            >
+                <div className="h-1/2 w-full overflow-hidden relative">
                     {project.images.map((image, index) => (
                         <PhotoView
                             height={1000}
@@ -30,17 +32,12 @@ const ProjectCard = ({ project }) => {
                                 <img
                                     src={image}
                                     alt={`${image}-${index}`}
-                                    className="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-110"
+                                    className="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110 focus-within:scale-110"
                                 />
                             ) : undefined}
                         </PhotoView>
                     ))}
-                </div>
-                <div className="p-4 space-y-3">
-                    <h3 className="tracking-tight text-lg font-semibold h-[3rem] line-clamp-3">
-                        {project.title}
-                    </h3>
-                    <div className="flex gap-1 items-center">
+                    <div className="absolute bottom-2 right-5 invisible group-hover:visible group-active:visible group-focus-within:visible flex gap-1 items-center">
                         {project.url ? (
                             <Link
                                 to={project.url}
@@ -72,20 +69,43 @@ const ProjectCard = ({ project }) => {
                             </Button>
                         )}
                     </div>
-                    <Separator />
-                    <ScrollArea className="h-20">
+                </div>
+                <div className="p-4 h-[calc(50%-1rem)] space-y-3">
+                    <h3 className="tracking-tight text-xl font-semibold">
+                        {project.title}
+                    </h3>
+                    <ScrollArea className="h-[calc(100%-2rem)]">
                         <p className="tracking-tight text-sm">
                             {project.description}
                         </p>
+                        <div className="space-x-1 line-clamp-3">
+                            {project.technologies.map((tech) => (
+                                <Badge key={tech}>{tech}</Badge>
+                            ))}
+                        </div>
                     </ScrollArea>
-                    <div className="space-x-1 line-clamp-3">
-                        {project.technologies.map((technology) => (
-                            <Badge key={technology}>{technology}</Badge>
-                        ))}
-                    </div>
                 </div>
             </div>
         </PhotoProvider>
+    )
+}
+
+const MoreProjectCard = () => {
+    return (
+        <div
+            tabIndex={0}
+            className="border rounded-lg col-span-1 h-[25rem] min-h-[25rem] relative flex text-center items-center justify-center flex-col p-4 overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
+        >
+            <IoIosCog className="text-9xl text-accent" />
+            <h2 className="text-lg font-bold tracking-tighter sm:text-xl xl:text-2xl/none ">
+                <AuroraText>New Projects Coming Soon..</AuroraText>
+            </h2>
+            <span className="text-xs">
+                <TextAnimate animation="blurIn" as="p">
+                    I'm currently working on new exciting projects. Stay tuned!
+                </TextAnimate>
+            </span>
+        </div>
     )
 }
 
@@ -103,7 +123,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                 <TextAnimate animation="blurIn" as="h4">
                     Here are the list of my solid projects. Check it out!
                 </TextAnimate>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-3">
                     {projects?.map((project, index) => {
                         return (
                             <BlurFade
@@ -116,9 +136,18 @@ const ProjectSection = ({ projects, githubAccount }) => {
                             </BlurFade>
                         )
                     })}
+                    {projects.length < 5 && (
+                        <BlurFade
+                            delay={0.25 + projects.length * 0.2}
+                            duration={0.5}
+                            inView
+                        >
+                            <MoreProjectCard />
+                        </BlurFade>
+                    )}
                 </div>
                 <div className="mt-20 space-y-4">
-                    <h3 className="scroll-m-20 text-xl/none font-semibold tracking-tight text-center">
+                    <h3 className="scroll-m-20 text-xl/none font-semibold px-4 sm:px-6 py-16 sm:py-24 lg:py-32 tracking-tight text-center">
                         Take a look at my{" "}
                         <span className="inline-flex items-center gap-1">
                             <FaGithub className="text-4xl" />{" "}
