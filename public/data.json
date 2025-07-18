@@ -4,7 +4,7 @@
         "name": "Evan Feliza",
         "title": "Frontend Developer",
         "resume": "./files/resume.pdf",
-        "about": "As a computer engineering graduate transitioning into web development, I bring strong problem-solving skills to frontend programming. I'm currently building my expertise in modern JavaScript, React, and responsive design while applying my technical foundation to create efficient, user-friendly interfaces. Every project helps me bridge the gap between software principles and practical web development."
+        "about": "As a computer engineering graduate with a strong foundation in algorithms and systems thinking, I've successfully transitioned into web development with focused expertise in modern frontend technologies. Over the past year of freelancing, I've refined my ability to translate complex technical concepts into performant, intuitive interfaces - blending engineering rigor with user-centric design principles."
     },
     "skills": [
         "NextJS",
@@ -16,7 +16,8 @@
         "Nginx",
         "Prisma",
         "MySql",
-        "Git"
+        "Git",
+        "Postman"
     ],
     "projects": [
         {

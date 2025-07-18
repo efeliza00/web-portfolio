@@ -96,7 +96,7 @@ const MoreProjectCard = () => {
             tabIndex={0}
             className="border-3 border-dashed  bg-transparent rounded-lg col-span-1 h-[25rem] min-h-[25rem] relative flex text-center items-center justify-center flex-col p-4 overflow-hidden group focus-within:ring focus-within:ring-offset-4"
         >
-            <IoIosCog className="text-9xl text-accent" />
+            <IoIosCog className="text-9xl text-accent animate-spin" />
             <h2 className="text-lg font-bold tracking-tighter sm:text-xl xl:text-2xl/none ">
                 <AuroraText>New Projects Coming Soon..</AuroraText>
             </h2>
