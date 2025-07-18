@@ -40,6 +40,26 @@
             "code": ""
         },
         {
+            "title": "VoteBuddy ",
+            "description": "A modern voting platform designed to bring transparency, security, and ease to elections—whether for schools, organizations, or student councils. We believe every vote should be simple to cast, impossible to tamper with, and effortless to manage.",
+            "technologies": [
+                "React",
+                "NextJS",
+                "ShadcnUI",
+                "MongoDB",
+                "NextAuth",
+                "Tailwindcss"
+            ],
+            "images": [
+                "/images/projects/votebuddy1.png",
+                "/images/projects/votebuddy2.png",
+                "/images/projects/votebuddy3.png",
+                "/images/projects/votebuddy4.png"
+            ],
+            "url": "https://www.votebuddy.cc/",
+            "code": "https://github.com/efeliza00/electoral-voting-system/"
+        },
+        {
             "title": "Mobo Market",
             "description": "Mobo Market is an e-commerce demo web application that aims to showcase the usage of APIs specifically Fake Store API. With the use of NextJS 14, this app demonstrates the usage of new features of Next JS such intercepted routes, parallel routes. This app also uses middlewares for authentication. With the help of shadcn UI the app showcases beautiful components.",
             "technologies": [
