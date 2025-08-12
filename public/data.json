@@ -14,8 +14,10 @@
         "Typescript",
         "Docker",
         "Nginx",
+        "Socket.Io",
         "Prisma",
         "MySql",
+        "MongoDB",
         "Git",
         "Postman"
     ],
@@ -59,6 +61,25 @@
             ],
             "url": "https://www.votebuddy.cc/",
             "code": "https://github.com/efeliza00/electoral-voting-system/"
+        },
+                {
+            "title": "YouOke ",
+            "description": "Search Youtube Videos and sing like you are in a karaoke room.",
+            "technologies": [
+                "React",
+                "Socket.io",
+                "MantineUi",
+                "ExpressJs",
+                "Tailwindcss"
+            ],
+            "images": [
+                "/images/projects/youoke1.png",
+                "/images/projects/youoke2.png",
+                "/images/projects/youoke3.png",
+                "/images/projects/youoke4.png"
+            ],
+            "url": "https://karaoke-app-mj17.onrender.com/",
+            "code": "https://github.com/efeliza00/karaoke-app"
         },
         {
             "title": "Mobo Market",
