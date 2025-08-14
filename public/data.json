@@ -81,6 +81,21 @@
             "url": "https://karaoke-app-mj17.onrender.com/",
             "code": "https://github.com/efeliza00/karaoke-app"
         },
+              {
+            "title": "Capstone Idea Generator",
+            "description": "Generate a random capstone idea using the power of ai.",
+            "technologies": [
+                "React",
+                "BlueprintJs",
+                "OpenAi"
+            ],
+            "images": [
+                "/images/projects/capstone-idea-generator1.png",
+                     "/images/projects/capstone-idea-generator2.png"
+            ],
+            "url": "https://capstone-idea-generator-ef.vercel.app/",
+            "code": "https://github.com/efeliza00/capstone-idea-generator"
+        },
         {
             "title": "Mobo Market",
             "description": "Mobo Market is an e-commerce demo web application that aims to showcase the usage of APIs specifically Fake Store API. With the use of NextJS 14, this app demonstrates the usage of new features of Next JS such intercepted routes, parallel routes. This app also uses middlewares for authentication. With the help of shadcn UI the app showcases beautiful components.",
