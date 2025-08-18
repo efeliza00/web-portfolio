@@ -114,7 +114,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
     const username = match ? match[1] : null
     return (
         <Element name="projects" className="bg-primary-foreground">
-            <div className="container mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 space-y-5">
+            <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 space-y-5">
                 <BlurFade delay={0.25} inView>
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
                         <AuroraText>My Projects</AuroraText>
