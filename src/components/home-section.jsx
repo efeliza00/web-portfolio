@@ -8,7 +8,7 @@ const HomeSection = ({ info }) => {
     return (
         <Element
             name="home"
-            className="bg-inherit mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32"
+            className="bg-inherit mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32"
         >
             <BlurFade delay={0.25} inView>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
