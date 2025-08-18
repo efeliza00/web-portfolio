@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         <PhotoProvider pullClosable={false} maskClosable={false}>
             <div
                 tabIndex={0}
-                className="border rounded-lg col-span-1 h-[25rem] min-h-[25rem] relative overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
+                className="border rounded-lg col-span-1 hover:scale-98 duration-300  h-[25rem] min-h-[25rem] relative overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
             >
                 <div className="h-1/2 w-full overflow-hidden relative">
                     {project.images.map((image, index) => (
