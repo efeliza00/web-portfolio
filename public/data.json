@@ -4,7 +4,7 @@
         "name": "Evan Feliza",
         "title": "Frontend Developer",
         "resume": "./files/resume.pdf",
-        "about": "As a computer engineering graduate with a strong foundation in algorithms and systems thinking, I've successfully transitioned into web development with focused expertise in modern frontend technologies. With 1 year of dedicated freelance experience, I've refined my ability to translate complex technical concepts into performant, intuitive interfaces - blending engineering rigor with user-centric design principles. Throughout my freelance journey, I've delivered multiple successful projects while continuously expanding my technical expertise."
+        "about": "A Computer Engineering graduate transitioning as a frontend developer with a passion for creating beautiful and functional web applications. With 1 year of experience creating full-stack applications using modern technologies like React, Next.js, Tailwind CSS, NodeJs and Prisma. My goal is to deliver high-quality code and exceptional user experiences."
     },
     "skills": [
         "NextJS",
@@ -62,7 +62,7 @@
             "url": "https://www.votebuddy.cc/",
             "code": "https://github.com/efeliza00/electoral-voting-system/"
         },
-                {
+        {
             "title": "YouOke ",
             "description": "Search Youtube Videos and sing like you are in a karaoke room.",
             "technologies": [
@@ -81,17 +81,13 @@
             "url": "https://karaoke-app-mj17.onrender.com/",
             "code": "https://github.com/efeliza00/karaoke-app"
         },
-              {
+        {
             "title": "Capstone Idea Generator",
             "description": "Generate a random capstone idea using the power of ai.",
-            "technologies": [
-                "React",
-                "BlueprintJs",
-                "OpenAi"
-            ],
+            "technologies": ["React", "BlueprintJs", "OpenAi"],
             "images": [
                 "/images/projects/capstone-idea-generator1.png",
-                     "/images/projects/capstone-idea-generator2.png"
+                "/images/projects/capstone-idea-generator2.png"
             ],
             "url": "https://capstone-idea-generator-ef.vercel.app/",
             "code": "https://github.com/efeliza00/capstone-idea-generator"
