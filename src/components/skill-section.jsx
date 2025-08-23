@@ -16,9 +16,45 @@ const SkillSection = ({ skills }) => {
                 <TextAnimate animation="blurIn" as="h4">
                     Technologies I’ve had hands-on experience with.
                 </TextAnimate>
-
-                <div className="flex flex-wrap gap-2 min-h-20  mt-8">
-                    {skills.map((skill, index) => (
+                <h3 className="leading-10 font-semibold text-2xl">
+                    Frontend Development
+                </h3>
+                <div className="flex flex-wrap gap-2 min-h-20">
+                    {skills.frontend.map((skill, index) => (
+                        <BlurFade
+                            key={skill}
+                            delay={0.25 + index * 0.1}
+                            duration={0.5}
+                            inView
+                        >
+                            <Badge className="text-xs sm:text-sm px-3 py-1 whitespace-nowrap hover:bg-secondary hover:text-primary cursor-pointer transition-all duration-200">
+                                {skill}
+                            </Badge>
+                        </BlurFade>
+                    ))}
+                </div>
+                <h3 className="leading-10 font-semibold text-2xl">
+                    Backend Development
+                </h3>
+                <div className="flex flex-wrap gap-2 min-h-20  ">
+                    {skills.backend.map((skill, index) => (
+                        <BlurFade
+                            key={skill}
+                            delay={0.25 + index * 0.1}
+                            duration={0.5}
+                            inView
+                        >
+                            <Badge className="text-xs sm:text-sm px-3 py-1 whitespace-nowrap hover:bg-secondary hover:text-primary cursor-pointer transition-all duration-200">
+                                {skill}
+                            </Badge>
+                        </BlurFade>
+                    ))}
+                </div>
+                <h3 className="leading-10 font-semibold text-2xl">
+                    Others Skills
+                </h3>
+                <div className="flex flex-wrap gap-2 min-h-20 ">
+                    {skills.tools.map((skill, index) => (
                         <BlurFade
                             key={skill}
                             delay={0.25 + index * 0.1}

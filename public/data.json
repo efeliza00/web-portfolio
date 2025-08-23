@@ -6,21 +6,26 @@
         "resume": "./files/resume.pdf",
         "about": "A Computer Engineering graduate transitioning as a frontend developer with a passion for creating beautiful and functional web applications. With 1 year of experience creating full-stack applications using modern technologies like React, Next.js, Tailwind CSS, NodeJs and Prisma. My goal is to deliver high-quality code and exceptional user experiences."
     },
-    "skills": [
-        "NextJS",
-        "React",
-        "Tailwindcss",
-        "ShadcnUI",
-        "Typescript",
-        "Docker",
-        "Nginx",
-        "Socket.Io",
-        "Prisma",
-        "MySql",
-        "MongoDB",
-        "Git",
-        "Postman"
-    ],
+    "skills": {
+        "frontend": [
+            "NextJS",
+            "React",
+            "Tailwindcss",
+            "ShadcnUI",
+            "Typescript"
+        ],
+        "backend": [
+            "Docker",
+            "Nginx",
+            "Socket.IO",
+            "Prisma",
+            "MySql",
+            "MongoDB",
+            "NodeJs",
+            "ExpressJs"
+        ],
+        "tools": ["Git", "Postman"]
+    },
     "projects": [
         {
             "title": "Barangay Inhabitant Viewer",
