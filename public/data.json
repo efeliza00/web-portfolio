@@ -87,6 +87,26 @@
             "code": "https://github.com/efeliza00/karaoke-app"
         },
         {
+            "title": "CodeRedMap",
+            "description": "A web application Marks your location by sending and emergency request.",
+            "technologies": [
+                "React",
+                "NextJS",
+                "ShadcnUI",
+                "Supabase",
+                "Prisma",
+                "Tailwindcss"
+            ],
+            "images": [
+                "/images/projects/project4image1.png",
+                "/images/projects/project4image2.png",
+                "/images/projects/project4image3.png",
+                "/images/projects/project4image4.png"
+            ],
+            "url": "https://coderedmap.vercel.app/",
+            "code": "https://github.com/efeliza00/emergency-map-marker"
+        },
+        {
             "title": "Capstone Idea Generator",
             "description": "Generate a random capstone idea using the power of ai.",
             "technologies": ["React", "BlueprintJs", "OpenAi"],
