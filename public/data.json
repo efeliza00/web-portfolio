@@ -68,25 +68,6 @@
             "code": "https://github.com/efeliza00/electoral-voting-system/"
         },
         {
-            "title": "YouOke ",
-            "description": "Search Youtube Videos and sing like you are in a karaoke room.",
-            "technologies": [
-                "React",
-                "Socket.io",
-                "MantineUi",
-                "ExpressJs",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/youoke1.png",
-                "/images/projects/youoke2.png",
-                "/images/projects/youoke3.png",
-                "/images/projects/youoke4.png"
-            ],
-            "url": "https://karaoke-app-mj17.onrender.com/",
-            "code": "https://github.com/efeliza00/karaoke-app"
-        },
-        {
             "title": "CodeRedMap",
             "description": "A web application Marks your location by sending and emergency request.",
             "technologies": [
@@ -106,6 +87,26 @@
             "url": "https://coderedmap.vercel.app/",
             "code": "https://github.com/efeliza00/emergency-map-marker"
         },
+        {
+            "title": "YouOke ",
+            "description": "Search Youtube Videos and sing like you are in a karaoke room.",
+            "technologies": [
+                "React",
+                "Socket.io",
+                "MantineUi",
+                "ExpressJs",
+                "Tailwindcss"
+            ],
+            "images": [
+                "/images/projects/youoke1.png",
+                "/images/projects/youoke2.png",
+                "/images/projects/youoke3.png",
+                "/images/projects/youoke4.png"
+            ],
+            "url": "https://karaoke-app-mj17.onrender.com/",
+            "code": "https://github.com/efeliza00/karaoke-app"
+        },
+
         {
             "title": "Capstone Idea Generator",
             "description": "Generate a random capstone idea using the power of ai.",

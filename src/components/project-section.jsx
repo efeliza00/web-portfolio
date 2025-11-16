@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         <PhotoProvider pullClosable={false} maskClosable={false}>
             <div
                 tabIndex={0}
-                className="border rounded-lg col-span-1 hover:scale-98 duration-300  h-[25rem] min-h-[25rem] relative overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
+                className="border rounded-lg col-span-1 hover:scale-105 duration-300  h-[25rem] min-h-[25rem] relative overflow-hidden group shadow bg-card focus-within:ring focus-within:ring-offset-4"
             >
                 <div className="h-1/2 w-full overflow-hidden relative">
                     {project.images.map((image, index) => (
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
                                 <img
                                     src={image}
                                     alt={`${image}-${index}`}
-                                    className="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110 focus-within:scale-110"
+                                    className="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-90 hover:rounded-lg transition-[border-radius] duration-500 group-active:scale-110 focus-within:scale-110"
                                 />
                             ) : undefined}
                         </PhotoView>
@@ -123,7 +123,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                 <TextAnimate animation="blurIn" as="h4">
                     Here are the list of my solid projects. Check it out!
                 </TextAnimate>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     {projects?.map((project, index) => {
                         return (
                             <BlurFade
