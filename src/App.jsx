@@ -7,6 +7,7 @@ import HomeSection from "./components/home-section"
 import Loading from "./components/loading"
 import { BlurFade } from "./components/magicui/blur-fade"
 import { GridPattern } from "./components/magicui/grid-pattern"
+import ProjectCounterSection from "./components/project-counter-section"
 import ProjectSection from "./components/project-section"
 import SkillSection from "./components/skill-section"
 import navigations from "./constants/navigations"
@@ -44,6 +45,7 @@ function App() {
                         <HomeSection info={data?.info} />
                         <AboutSection about={data?.info?.about} />
                         <SkillSection skills={data?.skills} />
+                        <ProjectCounterSection />
                         <ProjectSection
                             projects={data?.projects}
                             githubAccount={data?.contact.github}
