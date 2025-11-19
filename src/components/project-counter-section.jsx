@@ -24,7 +24,7 @@ const ProjectCounterSection = () => {
                     <div className="absolute inset-0 bg-purple-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-95 group-hover:scale-100"></div>
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-primary-foreground  mt-6 mb-2">
-                    Projects
+                    Personal Projects
                 </h3>
             </div>
         </div>
