@@ -123,8 +123,37 @@ const ProjectSection = ({ projects, githubAccount }) => {
                 <TextAnimate animation="blurIn" as="h4">
                     Here are the list of my solid projects. Check it out!
                 </TextAnimate>
+                <h3 className="font-semibold text-center md:text-left  tracking-tighter text-6xl mt-10">
+                    Client{" "}
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                    {projects?.map((project, index) => {
+                    {projects?.clients.map((project, index) => {
+                        return (
+                            <BlurFade
+                                key={index}
+                                delay={0.25 + index * 0.2}
+                                duration={0.5}
+                                inView
+                            >
+                                <ProjectCard project={project} key={index} />
+                            </BlurFade>
+                        )
+                    })}
+                    {projects.length < 5 && (
+                        <BlurFade
+                            delay={0.25 + projects.length * 0.2}
+                            duration={0.5}
+                            inView
+                        >
+                            <MoreProjectCard />
+                        </BlurFade>
+                    )}
+                </div>
+                <h3 className="font-semibold tracking-tighter  text-center md:text-left  text-6xl mt-10">
+                    Personal
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    {projects?.personals.map((project, index) => {
                         return (
                             <BlurFade
                                 key={index}

@@ -26,130 +26,139 @@
         ],
         "tools": ["Git", "Postman"]
     },
-    "projects": [
-        {
-            "title": "Barangay Inhabitant Viewer",
-            "description": "A web application that works offline, providing tools to view and analyze inhabitant records, family details, and household information through interactive dashboards.",
-            "technologies": [
-                "React",
-                "NextJS",
-                "ShadcnUI",
-                "Docker",
-                "Nginx",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/project1image1.png",
-                "/images/projects/project1image2.png",
-                "/images/projects/project1image3.png",
-                "/images/projects/project1image4.png"
-            ],
-            "url": "",
-            "code": ""
-        },
-        {
-            "title": "VoteBuddy ",
-            "description": "A modern voting platform designed to bring transparency, security, and ease to elections—whether for schools, organizations, or student councils. We believe every vote should be simple to cast, impossible to tamper with, and effortless to manage.",
-            "technologies": [
-                "React",
-                "NextJS",
-                "ShadcnUI",
-                "MongoDB",
-                "NextAuth",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/votebuddy1.png",
-                "/images/projects/votebuddy2.png",
-                "/images/projects/votebuddy3.png",
-                "/images/projects/votebuddy4.png"
-            ],
-            "url": "https://www.votebuddy.cc/",
-            "code": "https://github.com/efeliza00/electoral-voting-system/"
-        },
-        {
-            "title": "CodeRedMap",
-            "description": "A web application Marks your location by sending and emergency request.",
-            "technologies": [
-                "React",
-                "NextJS",
-                "ShadcnUI",
-                "Supabase",
-                "Prisma",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/project4image1.png",
-                "/images/projects/project4image2.png",
-                "/images/projects/project4image3.png",
-                "/images/projects/project4image4.png"
-            ],
-            "url": "https://coderedmap.vercel.app/",
-            "code": "https://github.com/efeliza00/emergency-map-marker"
-        },
-        {
-            "title": "YouOke ",
-            "description": "Search Youtube Videos and sing like you are in a karaoke room.",
-            "technologies": [
-                "React",
-                "Socket.io",
-                "MantineUi",
-                "ExpressJs",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/youoke1.png",
-                "/images/projects/youoke2.png",
-                "/images/projects/youoke3.png",
-                "/images/projects/youoke4.png"
-            ],
-            "url": "https://karaoke-app-mj17.onrender.com/",
-            "code": "https://github.com/efeliza00/karaoke-app"
-        },
+    "projects": {
+        "clients": [
+            {
+                "title": "Barangay Inhabitant Viewer",
+                "description": "A web application that works offline, providing tools to view and analyze inhabitant records, family details, and household information through interactive dashboards.",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "ShadcnUI",
+                    "Docker",
+                    "Nginx",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/project1image1.png",
+                    "/images/projects/project1image2.png",
+                    "/images/projects/project1image3.png",
+                    "/images/projects/project1image4.png"
+                ],
+                "url": "",
+                "code": ""
+            },
+            {
+                "title": "VoteBuddy ",
+                "description": "A modern voting platform designed to bring transparency, security, and ease to elections—whether for schools, organizations, or student councils. We believe every vote should be simple to cast, impossible to tamper with, and effortless to manage.",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "ShadcnUI",
+                    "MongoDB",
+                    "NextAuth",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/votebuddy1.png",
+                    "/images/projects/votebuddy2.png",
+                    "/images/projects/votebuddy3.png",
+                    "/images/projects/votebuddy4.png"
+                ],
+                "url": "https://www.votebuddy.cc/",
+                "code": "https://github.com/efeliza00/electoral-voting-system/"
+            }
+        ],
+        "personals": [
+            {
+                "title": "CodeRedMap",
+                "description": "A web application Marks your location by sending and emergency request.",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "ShadcnUI",
+                    "Supabase",
+                    "Prisma",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/project4image1.png",
+                    "/images/projects/project4image2.png",
+                    "/images/projects/project4image3.png",
+                    "/images/projects/project4image4.png"
+                ],
+                "url": "https://coderedmap.vercel.app/",
+                "code": "https://github.com/efeliza00/emergency-map-marker"
+            },
+            {
+                "title": "YouOke ",
+                "description": "Search Youtube Videos and sing like you are in a karaoke room.",
+                "technologies": [
+                    "React",
+                    "Socket.io",
+                    "MantineUi",
+                    "ExpressJs",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/youoke1.png",
+                    "/images/projects/youoke2.png",
+                    "/images/projects/youoke3.png",
+                    "/images/projects/youoke4.png"
+                ],
+                "url": "https://karaoke-app-mj17.onrender.com/",
+                "code": "https://github.com/efeliza00/karaoke-app"
+            },
 
-        {
-            "title": "Capstone Idea Generator",
-            "description": "Generate a random capstone idea using the power of ai.",
-            "technologies": ["React", "BlueprintJs", "OpenAi"],
-            "images": [
-                "/images/projects/capstone-idea-generator1.png",
-                "/images/projects/capstone-idea-generator2.png"
-            ],
-            "url": "https://capstone-idea-generator-ef.vercel.app/",
-            "code": "https://github.com/efeliza00/capstone-idea-generator"
-        },
-        {
-            "title": "Mobo Market",
-            "description": "Mobo Market is an e-commerce demo web application that aims to showcase the usage of APIs specifically Fake Store API. With the use of NextJS 14, this app demonstrates the usage of new features of Next JS such intercepted routes, parallel routes. This app also uses middlewares for authentication. With the help of shadcn UI the app showcases beautiful components.",
-            "technologies": [
-                "React",
-                "NextJS",
-                "ShadcnUI",
-                "FakeStoreApi",
-                "Tailwindcss"
-            ],
-            "images": [
-                "/images/projects/project2image1.png",
-                "/images/projects/project2image2.png",
-                "/images/projects/project2image3.png",
-                "/images/projects/project2image4.png"
-            ],
-            "url": "https://mobomarket.vercel.app",
-            "code": "https://github.com/efeliza00/e-commerce"
-        },
-        {
-            "title": "Crypto Checker",
-            "description": "CryptoChecker is a web application that is powerded by CoingeckoAPI. This enable users to browse crypto currency coins with the latest prices, rankings and coin information.",
-            "technologies": ["React", "NextJS", "CoinGeckoApi", "Tailwindcss"],
-            "images": [
-                "/images/projects/project3image1.png",
-                "/images/projects/project3image2.png",
-                "/images/projects/project3image3.png"
-            ],
-            "url": "https://crypto-checkerph.vercel.app/",
-            "code": "https://github.com/efeliza00/crypto-checker"
-        }
-    ],
+            {
+                "title": "Capstone Idea Generator",
+                "description": "Generate a random capstone idea using the power of ai.",
+                "technologies": ["React", "BlueprintJs", "OpenAi"],
+                "images": [
+                    "/images/projects/capstone-idea-generator1.png",
+                    "/images/projects/capstone-idea-generator2.png"
+                ],
+                "url": "https://capstone-idea-generator-ef.vercel.app/",
+                "code": "https://github.com/efeliza00/capstone-idea-generator"
+            },
+            {
+                "title": "Mobo Market",
+                "description": "Mobo Market is an e-commerce demo web application that aims to showcase the usage of APIs specifically Fake Store API. With the use of NextJS 14, this app demonstrates the usage of new features of Next JS such intercepted routes, parallel routes. This app also uses middlewares for authentication. With the help of shadcn UI the app showcases beautiful components.",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "ShadcnUI",
+                    "FakeStoreApi",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/project2image1.png",
+                    "/images/projects/project2image2.png",
+                    "/images/projects/project2image3.png",
+                    "/images/projects/project2image4.png"
+                ],
+                "url": "https://mobomarket.vercel.app",
+                "code": "https://github.com/efeliza00/e-commerce"
+            },
+            {
+                "title": "Crypto Checker",
+                "description": "CryptoChecker is a web application that is powerded by CoingeckoAPI. This enable users to browse crypto currency coins with the latest prices, rankings and coin information.",
+                "technologies": [
+                    "React",
+                    "NextJS",
+                    "CoinGeckoApi",
+                    "Tailwindcss"
+                ],
+                "images": [
+                    "/images/projects/project3image1.png",
+                    "/images/projects/project3image2.png",
+                    "/images/projects/project3image3.png"
+                ],
+                "url": "https://crypto-checkerph.vercel.app/",
+                "code": "https://github.com/efeliza00/crypto-checker"
+            }
+        ]
+    },
     "contact": {
         "email": "evanfeliza22@gmail.com",
         "github": "https://github.com/efeliza00",
