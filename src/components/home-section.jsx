@@ -12,8 +12,15 @@ const HomeSection = ({ info }) => {
         >
             <BlurFade delay={0.25} inView>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <AuroraText>{info.name}</AuroraText>, a passionate{" "}
-                    <AuroraText>{info.title}</AuroraText>.
+                    Hi, I'm{" "}
+                    <AuroraText colors={["#001A6E", "#074799", "#EEEE"]}>
+                        {info.name}
+                    </AuroraText>
+                    , a passionate{" "}
+                    <AuroraText colors={["#001A6E", "#074799", "#EEEE"]}>
+                        {info.title}
+                    </AuroraText>
+                    .
                 </h2>
             </BlurFade>
 
@@ -29,7 +36,7 @@ const HomeSection = ({ info }) => {
                 className="mt-6 flex justify-center md:justify-start"
             >
                 <a download href={info.resume}>
-                    <InteractiveHoverButton className="mx-auto md:mx-0">
+                    <InteractiveHoverButton className="mx-auto bg-[#001A6E] text-white md:mx-0">
                         <div className="flex items-center gap-2">
                             <GrDocumentText />
                             <span>My Resume</span>

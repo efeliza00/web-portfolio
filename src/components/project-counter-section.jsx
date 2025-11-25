@@ -2,7 +2,7 @@ import { NumberTicker } from "./ui/number-ticker"
 
 const ProjectCounterSection = () => {
     return (
-        <div className="flex flex-col bg-gradient-to-r from-pink-600/70 via-violet-700/70 to-blue-600/70 md:from-pink-600/50 md:via-violet-700/50 md:to-blue-600/50 md:flex-row gap-20 py-16 items-center justify-center border-t border-b border-gray-100">
+        <div className="flex flex-col bg-gradient-to-r from-[#001A6E]  to-[#074799] md:flex-row gap-20 py-16 items-center justify-center border-t border-b border-gray-100">
             <div className="text-center group ">
                 <div className="relative min-h-[120px] flex items-center justify-center">
                     <NumberTicker

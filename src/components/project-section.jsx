@@ -117,13 +117,18 @@ const ProjectSection = ({ projects, githubAccount }) => {
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 space-y-5">
                 <BlurFade delay={0.25} inView>
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                        <AuroraText>My Projects</AuroraText>
+                        <AuroraText
+                            colors={["#001A6E", "#074799", "#EEEE"]}
+                            className="text-6xl md:text-2xl"
+                        >
+                            My Projects
+                        </AuroraText>
                     </h2>
                 </BlurFade>
                 <TextAnimate animation="blurIn" as="h4">
                     Here are the list of my solid projects. Check it out!
                 </TextAnimate>
-                <h3 className="font-semibold text-center md:text-left  tracking-tighter text-6xl mt-10">
+                <h3 className="font-light text-center md:text-left  tracking-tighter text-3xl mt-10">
                     Client{" "}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -149,7 +154,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                         </BlurFade>
                     )}
                 </div>
-                <h3 className="font-semibold tracking-tighter  text-center md:text-left  text-6xl mt-10">
+                <h3 className="font-light text-center md:text-left  tracking-tighter text-3xl mt-10">
                     Personal
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

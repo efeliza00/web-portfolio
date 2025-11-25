@@ -8,8 +8,10 @@ const AboutSection = ({ about }) => {
         <Element name="about" className="bg-primary-foreground relative">
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 space-y-3">
                 <BlurFade delay={0.25} inView>
-                    <h2 className="text-2xl font-bold text-center tracking-tighter sm:text-4xl xl:text-5xl/none ">
-                        <AuroraText>About Me</AuroraText>
+                    <h2 className="text-6xl font-bold text-center tracking-tighter sm:text-4xl xl:text-5xl/none ">
+                        <AuroraText colors={["#001A6E", "#074799", "#EEEE"]}>
+                            About Me
+                        </AuroraText>
                     </h2>
                 </BlurFade>
 
