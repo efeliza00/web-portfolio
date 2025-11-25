@@ -36,8 +36,11 @@ const HomeSection = ({ info }) => {
                 className="mt-6 flex justify-center md:justify-start"
             >
                 <a download href={info.resume}>
-                    <InteractiveHoverButton className="mx-auto bg-[#001A6E] text-white md:mx-0">
-                        <div className="flex items-center gap-2">
+                    <InteractiveHoverButton
+                        buttonColor={`bg-[#001A6E]`}
+                        className="mx-auto  text-[#001A6E]  md:mx-0"
+                    >
+                        <div className="flex items-center gap-2 ">
                             <GrDocumentText />
                             <span>My Resume</span>
                         </div>

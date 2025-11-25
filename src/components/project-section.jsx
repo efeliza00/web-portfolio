@@ -119,7 +119,7 @@ const ProjectSection = ({ projects, githubAccount }) => {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
                         <AuroraText
                             colors={["#001A6E", "#074799", "#EEEE"]}
-                            className="text-6xl md:text-2xl"
+                            className="text-6xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
                         >
                             My Projects
                         </AuroraText>

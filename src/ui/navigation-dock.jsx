@@ -23,7 +23,7 @@ const NavigationDock = ({ navigations }) => {
                         activeClass="active"
                         activeStyle={{
                             boxSizing: "border-box",
-                            borderBottom: "2px solid black",
+                            borderBottom: "5px solid #001A6E",
                             duration: "400",
                         }}
                         isDynamic={true}
@@ -36,7 +36,7 @@ const NavigationDock = ({ navigations }) => {
                     </Link>
                 </DockIcon>
             ))}
-            <ScrollProgress className="bg-primary" />
+            <ScrollProgress className="bg-[#001A6E] h-1" />
         </Dock>
     )
 }
